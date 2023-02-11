@@ -1,0 +1,12 @@
+name: Testing our custom GitHub Action
+
+on:
+   push:
+      branches: main
+      
+jobs:
+    main:
+       runs-on: ubuntu-latest
+       steps:
+         - uses : actions/checkout@v2
+         - uses : itzrahulyadav/Github-actions@main
